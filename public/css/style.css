@@ -1,0 +1,122 @@
+/* Rehnuma ERP - Global Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* RTL Support */
+[dir="rtl"] {
+    direction: rtl;
+    text-align: right;
+}
+
+[dir="rtl"] .btn {
+    margin-right: 5px;
+    margin-left: 0;
+}
+
+/* Cards */
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Tables */
+table {
+    border-collapse: collapse;
+}
+
+table thead {
+    background-color: #f8f9fa;
+}
+
+table tbody tr:hover {
+    background-color: #f0f0f0;
+}
+
+/* Buttons */
+.btn {
+    border-radius: 5px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+}
+
+/* Forms */
+.form-control {
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.form-control:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+}
+
+/* Alerts */
+.alert {
+    border-radius: 5px;
+    border: none;
+}
+
+/* Navigation */
+.navbar {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* Pagination */
+.pagination {
+    margin-top: 20px;
+}
+
+.pagination .page-link {
+    color: #667eea;
+    border-color: #ddd;
+}
+
+.pagination .page-link:hover {
+    background-color: #667eea;
+    border-color: #667eea;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container-fluid {
+        padding: 10px;
+    }
+    
+    .btn-group-horizontal {
+        flex-direction: column;
+    }
+    
+    .btn-group-horizontal .btn {
+        margin-bottom: 10px;
+    }
+}
